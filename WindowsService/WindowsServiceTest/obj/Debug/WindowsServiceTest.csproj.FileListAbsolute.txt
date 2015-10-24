@@ -1,0 +1,5 @@
+E:\GitHub\WindowsService\WindowsService\WindowsServiceTest\bin\Debug\WindowsServiceTest.exe.config
+E:\GitHub\WindowsService\WindowsService\WindowsServiceTest\bin\Debug\WindowsServiceTest.exe
+E:\GitHub\WindowsService\WindowsService\WindowsServiceTest\bin\Debug\WindowsServiceTest.pdb
+E:\GitHub\WindowsService\WindowsService\WindowsServiceTest\obj\Debug\WindowsServiceTest.exe
+E:\GitHub\WindowsService\WindowsService\WindowsServiceTest\obj\Debug\WindowsServiceTest.pdb
