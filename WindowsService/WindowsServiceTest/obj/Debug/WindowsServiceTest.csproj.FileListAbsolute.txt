@@ -5,3 +5,7 @@ E:\GitHub\WindowsService\WindowsService\WindowsServiceTest\obj\Debug\WindowsServ
 E:\GitHub\WindowsService\WindowsService\WindowsServiceTest\obj\Debug\WindowsServiceTest.pdb
 E:\GitHub\WindowsService\WindowsService\WindowsServiceTest\obj\Debug\WindowsServiceTest.ProjectInstaller.resources
 E:\GitHub\WindowsService\WindowsService\WindowsServiceTest\obj\Debug\WindowsServiceTest.csproj.GenerateResource.Cache
+E:\GitHub\WindowsService\WindowsService\WindowsServiceTest\bin\Debug\WindowsServiceTest.exe.manifest
+E:\GitHub\WindowsService\WindowsService\WindowsServiceTest\bin\Debug\WindowsServiceTest.application
+E:\GitHub\WindowsService\WindowsService\WindowsServiceTest\obj\Debug\WindowsServiceTest.exe.manifest
+E:\GitHub\WindowsService\WindowsService\WindowsServiceTest\obj\Debug\WindowsServiceTest.application

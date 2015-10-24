@@ -2,14 +2,22 @@
 using System.IO;
 using System.ServiceProcess;
 
+using System.Timers;
+
+
 namespace WindowsServiceTest
 {
     public partial class ServiceTest : ServiceBase
     {
-        private string path = "D:\\WindowsService\\log.txt";
+        
         public ServiceTest()
         {
             InitializeComponent();
+            ServiceName = "ServiceTest";
+            CanStop = true;
+            CanPauseAndContinue = true;
+            AutoLog = true;
+
         }
 
         /// <summary>
@@ -18,10 +26,7 @@ namespace WindowsServiceTest
         /// <param name="args"></param>
         protected override void OnStart(string[] args)
         {
-            using (StreamWriter sw = new StreamWriter(path, true))
-            {
-                sw.WriteLine(DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss")+" Start.");
-            }
+            FileOperating.SaveRecord(string.Format(@"当前记录时间：{0},状态：启动", DateTime.Now));
         }
 
 
@@ -30,10 +35,10 @@ namespace WindowsServiceTest
         /// </summary>
         protected override void OnStop()
         {
-            using (StreamWriter sw=new StreamWriter(path,true))
-            {
-                sw.WriteLine(DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss")+" Stop.");
-            }
+            FileOperating.SaveRecord(string.Format(@"当前记录时间：{0},状态：停止", DateTime.Now));
         }
+
+
+      
     }
 }

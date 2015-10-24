@@ -39,7 +39,9 @@
             // 
             // serviceInstaller1
             // 
+            this.serviceInstaller1.Description = "一个测试程序，测试Windows服务，向本地写文件";
             this.serviceInstaller1.ServiceName = "ServiceTest";
+            this.serviceInstaller1.StartType = System.ServiceProcess.ServiceStartMode.Automatic;
             // 
             // ProjectInstaller
             // 
