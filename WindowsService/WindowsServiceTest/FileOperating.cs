@@ -10,17 +10,16 @@ namespace WindowsServiceTest
            if(string.IsNullOrWhiteSpace(content))
                return;
 
-           FileStream fileStream = null;
-           StreamWriter streamWriter = null;
-
            try
            {
                string path = Path.Combine(AppDomain.CurrentDomain.SetupInformation.ApplicationBase,
                    string.Format("{0:yyyyMMdd}.txt",DateTime.Now));
-              // string path = "E:\\WindowsService\\a.txt";
 
+
+               FileStream fileStream;
                using (fileStream=new FileStream(path,FileMode.Append,FileAccess.Write))
                {
+                   StreamWriter streamWriter;
                    using (streamWriter=new StreamWriter(fileStream))
                    {
                        streamWriter.WriteLine(content);
